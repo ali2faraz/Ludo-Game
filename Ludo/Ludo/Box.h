@@ -1,8 +1,9 @@
 #pragma once
+#include"Piece.h"
 class Box
 {
 public:
-	int Piece;
+	Piece m_Piece;
 	Box();
 	~Box();
 	void AddPiece();

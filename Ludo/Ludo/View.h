@@ -1,10 +1,11 @@
 #pragma once
+#include"Ludo.h"
 class View
 {
 public:
 	View();
 	~View();
-	int Ludo;
+	Ludo m_Ludo;
 	int Controller;
     void StartGame();
 	void EndGame();

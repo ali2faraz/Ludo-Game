@@ -1,11 +1,9 @@
 #pragma once
 #include <iostream>
+#include"Piece.h"
+#include"Ludo.h"
 
 using namespace std;
-
-
-class Ludo;
-class Piece;
 
 class Board
 {

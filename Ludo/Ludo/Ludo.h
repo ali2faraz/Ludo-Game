@@ -1,7 +1,7 @@
 #pragma once
 #include"Dice.h"
-class Board {};
-class Player{};
+#include"Board.h"
+#include"Player.h"
 class Ludo
 {
 private:
