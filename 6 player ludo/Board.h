@@ -187,8 +187,8 @@ public:
 					B[ri][ci] = new Gray(gray, Position(ri, ci), this);
 				else
 					B[ri][ci] = nullptr;
-				//B[8][0] = new Green(green, Position(7, 0), this);
-				//B[8][0]->IsOpen = true;
+				B[8][3] = new Green(green, Position(8, 3), this);
+				B[8][3]->IsOpen = true;
 			}
 		}
 	}
@@ -363,21 +363,25 @@ public:
 			if (B[1][4] == nullptr)
 			{
 				B[1][4] = new Green(green, Position(1, 4), this);
+				B[1][4]->DrawP(1, 4, 5, 5, B[1][4]->getcolor(), -37);
 				return;
 			}
 			else if (B[1][1] == nullptr)
 			{
 				B[1][1] = new Green(green, Position(1, 1), this);
+				B[1][1]->DrawP(1, 1, 5, 5, B[1][1]->getcolor(), -37);
 				return;
 			}
 			else if (B[4][1] == nullptr)
 			{
 				B[4][1] = new Green(green, Position(4, 1), this);
+				B[4][1]->DrawP(4, 1, 5, 5, B[4][1]->getcolor(), -37);
 				return;
 			}
 			else if (B[4][4] == nullptr)
 			{
 				B[4][4] = new Green(green, Position(4, 4), this);
+				B[4][4]->DrawP(4, 4, 5, 5, B[4][4]->getcolor(), -37);
 				return;
 			}
 		}
@@ -386,21 +390,25 @@ public:
 			if (B[1][10] == nullptr)
 			{
 				B[1][10] = new Blue(blue, Position(1, 10), this);
+				B[1][10]->DrawP(1, 10, 5, 5, B[1][10]->getcolor(), -37);
 				return;
 			}
 			else if (B[1][13] == nullptr)
 			{
 				B[1][13] = new Blue(blue, Position(1, 13), this);
+				B[1][13]->DrawP(1, 13, 5, 5, B[1][13]->getcolor(), -37);
 				return;
 			}
 			else if (B[4][10] == nullptr)
 			{
 				B[4][10] = new Blue(blue, Position(4, 10), this);
+				B[4][10]->DrawP(4, 10, 5, 5, B[4][10]->getcolor(), -37);
 				return;
 			}
 			else if (B[4][13] == nullptr)
 			{
 				B[4][13] = new Blue(blue, Position(4, 13), this);
+				B[4][13]->DrawP(4, 13, 5, 5, B[4][13]->getcolor(), -37);
 				return;
 			}
 		}
@@ -409,21 +417,25 @@ public:
 			if (B[10][1] == nullptr)
 			{
 				B[10][1] = new Purple(purple, Position(10, 1), this);
+				B[1][10]->DrawP(1, 10, 5, 5, B[1][10]->getcolor(), -37);
 				return;
 			}
 			else if (B[10][4] == nullptr)
 			{
 				B[10][4] = new Purple(purple, Position(10, 4), this);
+				B[10][4]->DrawP(1, 10, 5, 5, B[10][4]->getcolor(), -37);
 				return;
 			}
 			else if (B[13][1] == nullptr)
 			{
 				B[13][1] = new Purple(purple, Position(13, 1), this);
+				B[13][1]->DrawP(1, 10, 5, 5, B[13][1]->getcolor(), -37);
 				return;
 			}
 			else if (B[13][4] == nullptr)
 			{
 				B[13][4] = new Purple(purple, Position(13, 4), this);
+				B[13][4]->DrawP(13, 4, 5, 5, B[13][4]->getcolor(), -37);
 				return;
 			}
 		}
@@ -432,21 +444,25 @@ public:
 			if (B[10][10] == nullptr)
 			{
 				B[10][10] = new Red(red, Position(10, 10), this);
+				B[10][10]->DrawP(1, 10, 5, 5, B[10][10]->getcolor(), -37);
 				return;
 			}
 			else if (B[10][13] == nullptr)
 			{
 				B[10][13] = new Red(red, Position(10, 13), this);
+				B[10][13]->DrawP(10, 13, 5, 5, B[10][13]->getcolor(), -37);
 				return;
 			}
 			else if (B[13][10] == nullptr)
 			{
 				B[13][10] = new Red(red, Position(13, 10), this);
+				B[13][10]->DrawP(13, 10, 5, 5, B[13][10]->getcolor(), -37);
 				return;
 			}
 			else if (B[13][13] == nullptr)
 			{
 				B[13][13] = new Red(red, Position(13, 13), this);
+				B[13][13]->DrawP(13, 13, 5, 5, B[13][13]->getcolor(), -37);
 				return;
 			}
 		}
@@ -455,21 +471,25 @@ public:
 			if (B[1][19] == nullptr)
 			{
 				B[1][19] = new Turqiose(turqiose, Position(1, 19), this);
+				B[1][19]->DrawP(1, 19, 5, 5, B[1][19]->getcolor(), -37);
 				return;
 			}
 			else if (B[1][22] == nullptr)
 			{
 				B[1][22] = new Turqiose(turqiose, Position(1, 22), this);
+				B[1][22]->DrawP(1, 22, 5, 5, B[1][22]->getcolor(), -37);
 				return;
 			}
 			else if (B[4][19] == nullptr)
 			{
 				B[4][19] = new Turqiose(turqiose, Position(4, 19), this);
+				B[4][19]->DrawP(4, 19, 5, 5, B[4][19]->getcolor(), -37);
 				return;
 			}
 			else if (B[4][22] == nullptr)
 			{
 				B[4][22] = new Turqiose(turqiose, Position(4, 22), this);
+				B[4][22]->DrawP(4, 22, 5, 5, B[4][22]->getcolor(), -37);
 				return;
 			}
 		}
@@ -478,21 +498,25 @@ public:
 			if (B[10][19] == nullptr)
 			{
 				B[10][19] = new Gray(gray, Position(10, 19), this);
+				B[10][19]->DrawP(10, 19, 5, 5, B[10][19]->getcolor(), -37);
 				return;
 			}
 			else if (B[10][22] == nullptr)
 			{
 				B[10][22] = new Gray(gray, Position(10, 22), this);
+				B[10][22]->DrawP(10, 22, 5, 5, B[10][22]->getcolor(), -37);
 				return;
 			}
 			else if (B[13][19] == nullptr)
 			{
 				B[13][19] = new Gray(gray, Position(13, 19), this);
+				B[13][19]->DrawP(13, 19, 5, 5, B[13][19]->getcolor(), -37);
 				return;
 			}
 			else if (B[13][22] == nullptr)
 			{
 				B[13][22] = new Gray(gray, Position(13, 22), this);
+				B[13][22]->DrawP(13, 22, 5, 5, B[13][22]->getcolor(), -37);
 				return;
 			}
 		}

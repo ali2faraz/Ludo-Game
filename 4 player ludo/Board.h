@@ -47,7 +47,7 @@ public:
 	}
 	bool IsWin()
 	{
-		for (int i = 1; i < 7; i++)
+		for (int i = 1; i < Nop+1; i++)
 		{
 			if (homecount[i] == 4)
 				return true;
@@ -138,7 +138,7 @@ public:
 				if ((c >= 6 && c < 9) || (r >= 6 && r < 9))
 					PrintHollowBox(sr, sc, rdim, cdim, s, 15);//white
 				if ((c >= 6 && c < 9) && (r >= 6 && r < 9))
-					PrintBox(sr, sc, rdim, cdim, s, 0);//0black
+					PrintBox(sr, sc, rdim, cdim, s, 0);//black
 			}
 		}
 	}
@@ -221,16 +221,12 @@ public:
 				}
 				else if (Nop == 2)
 				{
-					if ((ri == 1 || ri == 3) && (ci == 3))
+					if ((ri == 1 || ri == 3) && (ci == 1 || ci == 3))
 						B[ri][ci] = new Green(green, Position(ri, ci), this);
-					/*if ((ri == 1 || ri == 3) && (ci == 1 || ci == 3))
-						B[ri][ci] = new Green(green, Position(ri, ci), this);*/
 					else if ((ri == 10 || ri == 13) && (ci == 10 || ci == 13))
 						B[ri][ci] = new Red(red, Position(ri, ci), this);
 					else
 						B[ri][ci] = nullptr;
-					B[10][8] = new Green(green, Position(10, 8), this);
-					B[10][8]->IsOpen = true;
 				}
 			}
 		}
@@ -387,21 +383,25 @@ public:
 			if (B[1][1] == nullptr)
 			{
 				B[1][1] = new Green(green, Position(1, 1), this);
+				B[1][1]->DrawP(1, 1, 5, 5, B[1][1]->getcolor(), -37);
 				return;
 			}
 			else if (B[1][3] == nullptr)
 			{
 				B[1][3] = new Green(green, Position(1, 3), this);
+				B[1][3]->DrawP(1, 3, 5, 5, B[1][3]->getcolor(), -37);
 				return;
 			}
 			else if (B[3][1] == nullptr)
 			{
 				B[3][1] = new Green(green, Position(3, 1), this);
+				B[3][1]->DrawP(3, 1, 5, 5, B[3][1]->getcolor(), -37);
 				return;
 			}
 			else if (B[3][3] == nullptr)
 			{
 				B[3][3] = new Green(green, Position(3, 3), this);
+				B[3][3]->DrawP(3, 3, 5, 5, B[3][3]->getcolor(), -37);
 				return;
 			}
 		}
@@ -410,21 +410,25 @@ public:
 			if (B[1][10] == nullptr)
 			{
 				B[1][10] = new Blue(blue, Position(1, 10), this);
+				B[1][10]->DrawP(1, 10, 5, 5, B[1][10]->getcolor(), -37);
 				return;
 			}
 			else if (B[1][12] == nullptr)
 			{
 				B[1][12] = new Blue(blue, Position(1, 12), this);
+				B[1][12]->DrawP(1, 12, 5, 5, B[1][12]->getcolor(), -37);
 				return;
 			}
 			else if (B[3][10] == nullptr)
 			{
 				B[3][10] = new Blue(blue, Position(3, 10), this);
+				B[3][10]->DrawP(3, 10, 5, 5, B[3][10]->getcolor(), -37);
 				return;
 			}
 			else if (B[3][12] == nullptr)
 			{
 				B[3][12] = new Blue(blue, Position(3, 12), this);
+				B[3][12]->DrawP(3, 12, 5, 5, B[3][12]->getcolor(), -37);
 				return;
 			}
 		}
@@ -433,21 +437,25 @@ public:
 			if (B[10][1] == nullptr)
 			{
 				B[10][1] = new Purple(purple, Position(10, 1), this);
+				B[10][1]->DrawP(10, 1, 5, 5, B[10][1]->getcolor(), -37);
 				return;
 			}
 			else if (B[10][3] == nullptr)
 			{
 				B[10][3] = new Purple(purple, Position(10, 3), this);
+				B[10][3]->DrawP(10, 3, 5, 5, B[10][3]->getcolor(), -37);
 				return;
 			}
 			else if (B[13][1] == nullptr)
 			{
 				B[13][1] = new Purple(purple, Position(13, 1), this);
+				B[13][1]->DrawP(13, 1, 5, 5, B[13][1]->getcolor(), -37);
 				return;
 			}
 			else if (B[13][3] == nullptr)
 			{
 				B[13][3] = new Purple(purple, Position(13, 3), this);
+				B[13][3]->DrawP(13, 3, 5, 5, B[13][3]->getcolor(), -37);
 				return;
 			}
 		}
@@ -456,21 +464,25 @@ public:
 			if (B[10][10] == nullptr)
 			{
 				B[10][10] = new Red(red, Position(10, 10), this);
+				B[10][10]->DrawP(10, 10, 5, 5, B[10][10]->getcolor(), -37);
 				return;
 			}
 			else if (B[10][13] == nullptr)
 			{
 				B[10][13] = new Red(red, Position(10, 13), this);
+				B[10][13]->DrawP(10, 13, 5, 5, B[10][13]->getcolor(), -37);
 				return;
 			}
 			else if (B[13][10] == nullptr)
 			{
 				B[13][10] = new Red(red, Position(13, 10), this);
+				B[13][10]->DrawP(13, 10, 5, 5, B[13][10]->getcolor(), -37);
 				return;
 			}
 			else if (B[13][13] == nullptr)
 			{
 				B[13][13] = new Red(red, Position(13, 13), this);
+				B[13][13]->DrawP(13, 13, 5, 5, B[13][13]->getcolor(), -37);
 				return;
 			}
 		}
@@ -674,7 +686,7 @@ public:
 				displayplayermsg();
 				//PrintBoard();
 				backendboard();
-				Displaymarkedlocations(S.x, S.y, 5, 5);
+				//Displaymarkedlocations(S.x, S.y, 5, 5);
 				DiceRoll();
 				Selection(S);
 			} while (IsValidSelection() == false);

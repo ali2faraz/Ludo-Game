@@ -1,0 +1,8 @@
+Ali Faraz: Print Board
+Haris: Pieces Class(50%),Dice Display
+Zain : Kill Function,Pieces Class(50%)
+Huzaifa : Selection And Destination By Mouse Click,Play Function
+Moazzam : IsValidSelection and IsValidDestination,BackEndBoard
+Lodhi : Move Function(Without Flicker), Turn Change And Other Extra Shashkay, Initialization, Position Struct
+We All Worked On Board Class Together on Teams Which Can Be verified by our meeting details.
+Coding of Board Done by Moazzam ALi And Ali Faraz. 
